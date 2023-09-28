@@ -22,8 +22,9 @@
 			<thead class="thead-dark">
 				<tr>
 					<th scope="col">Nome</th>
-					<th scope="col">Email</th>
-					<th scope="col">Cidade</th>
+					<th scope="col">Whatsapp</th>
+					<th scope="col">Dia</th>
+					<th scope="col">Horario</th>
 					<th scope="col">Ações</th>
 				</tr>
 			</thead>
@@ -32,8 +33,9 @@
 				<!-- Linhas -->  
 				<tr>
 					<td>{{ cliente.nomecompleto }} </th>
-					<td>{{ cliente.email }} </td>
-					<td>{{ cliente.cidade }} </td>
+					<td>{{ cliente.whatsapp }} </td>
+					<td>{{ cliente.dia }} </td>
+					<td>{{cliente.horario}}</td>
 					<td>
 						<a href="{% url 'visualizar_cliente' cliente.id %}" class="btn btn-outline-dark" > <i class="far fa-eye"></i> Visualizar </a>
 						<a href="{% url 'atualizar_cliente' cliente.id %}" class="btn btn-outline-dark"> <i class="fas fa-user-edit"></i> Atualizar </a>
